@@ -4,7 +4,6 @@
 import React, { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-import { Members } from "@/components/Members";
 import { ContactForm } from "@/components/ContactForm";
 import { Separator } from "@/components/ui/separator";
 
@@ -18,7 +17,7 @@ export default function Home() {
   }, []);
 
   if (!mounted) {
-    return <div className="min-h-screen bg-background" />;
+    return null;
   }
 
   return (
@@ -26,10 +25,6 @@ export default function Home() {
       <Navigation />
       
       <Hero />
-      
-      <Separator className="bg-white/5" />
-      
-      <Members />
       
       <Separator className="bg-white/5" />
       
