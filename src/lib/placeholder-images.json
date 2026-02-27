@@ -65,6 +65,42 @@
       "description": "Community Manager portrait",
       "imageUrl": "https://images.unsplash.com/photo-1563208964-a455770abf67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29tYW4lMjBnYW1lcnxlbnwwfHx8fDE3NzIxODA0NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman gamer"
+    },
+    {
+      "id": "gal-game-1",
+      "description": "Esports Arena setup",
+      "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "gaming arena"
+    },
+    {
+      "id": "gal-game-2",
+      "description": "Action RPG gameplay",
+      "imageUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "video game"
+    },
+    {
+      "id": "gal-game-3",
+      "description": "Gaming Controller",
+      "imageUrl": "https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "game controller"
+    },
+    {
+      "id": "gal-team-1",
+      "description": "Team strategy meeting",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "team meeting"
+    },
+    {
+      "id": "gal-team-2",
+      "description": "Team celebrating win",
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "team celebration"
+    },
+    {
+      "id": "gal-team-3",
+      "description": "Office casual gathering",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "office fun"
     }
   ]
 }

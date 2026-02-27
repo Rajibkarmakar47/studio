@@ -1,9 +1,9 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
+import { Gallery } from "@/components/Gallery";
 import { Separator } from "@/components/ui/separator";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -62,6 +62,10 @@ export default function Home() {
       <Navigation />
       
       <Hero />
+      
+      <Separator className="bg-white/5" />
+
+      <Gallery />
       
       <Separator className="bg-white/5" />
       
