@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import Link from "next/navigation";
 import { Menu, X, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -40,7 +40,7 @@ export function Navigation() {
             <Rocket className="text-background w-6 h-6" />
           </div>
           <span className="font-headline font-bold text-xl tracking-tighter uppercase text-primary">
-            Zero G Hub
+            ZERO GRAVITY
           </span>
         </Link>
 
