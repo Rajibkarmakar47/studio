@@ -45,7 +45,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-body selection:bg-primary/30 selection:text-primary;
+    @apply bg-background text-foreground font-body selection:bg-primary/30 selection:text-primary overflow-x-hidden;
     scroll-behavior: smooth;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -73,4 +73,44 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Space Background Animations */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100vh); }
+}
+
+.star-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.stars-twinkle {
+  animation: drift 100s linear infinite;
+}
+
+.stars-twinkle-fast {
+  animation: drift 60s linear infinite;
+}
+
+.nebula-glow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at 50% 50%, hsla(165, 60%, 15%, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -2;
 }
