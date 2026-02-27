@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract cosmic green background",
+      "imageUrl": "https://images.unsplash.com/photo-1727363584291-433dcd86a0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcGFjZSUyMGdyZWVufGVufDB8fHx8MTc3MjE4MDQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space green"
+    },
+    {
+      "id": "project-1",
+      "description": "Gaming tournament platform interface",
+      "imageUrl": "https://images.unsplash.com/photo-1760656523257-4f89c1e41fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z2FtaW5nJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc3MjE4MDQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gaming interface"
+    },
+    {
+      "id": "project-2",
+      "description": "Virtual reality arena design",
+      "imageUrl": "https://images.unsplash.com/photo-1660312829388-95b65a28a401?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ciUyMGFyZW5hfGVufDB8fHx8MTc3MjE4MDQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vr arena"
+    },
+    {
+      "id": "project-3",
+      "description": "Community hub mobile app",
+      "imageUrl": "https://images.unsplash.com/photo-1564049489314-60d154ff107d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBnYW1pbmd8ZW58MHx8fHwxNzcyMTgwNDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile gaming"
+    },
+    {
+      "id": "member-1",
+      "description": "Team Lead portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1735463891577-1f343c81bd10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnYW1lciUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MjE0NDc4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gamer portrait"
+    },
+    {
+      "id": "member-2",
+      "description": "Strategy Specialist portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1613299469663-2cb086370e64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx5b3VuZyUyMGdhbWVyfGVufDB8fHx8MTc3MjE4MDQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "young gamer"
+    },
+    {
+      "id": "member-3",
+      "description": "Tech Architect portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1618077360395-f3068be8e001?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBnbGFzc2VzfGVufDB8fHx8MTc3MjA2MjU2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man glasses"
+    },
+    {
+      "id": "member-4",
+      "description": "Community Manager portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1563208964-a455770abf67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29tYW4lMjBnYW1lcnxlbnwwfHx8fDE3NzIxODA0NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman gamer"
+    }
+  ]
 }
