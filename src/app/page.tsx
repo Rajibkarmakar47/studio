@@ -2,8 +2,8 @@
 import React from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-import { AboutUs } from "@/components/AboutUs";
-import { Projects } from "@/components/Projects";
+import { Events } from "@/components/Events";
+import { Games } from "@/components/Games";
 import { Members } from "@/components/Members";
 import { ContactForm } from "@/components/ContactForm";
 import { AIChatbot } from "@/components/AIChatbot";
@@ -16,11 +16,13 @@ export default function Home() {
       
       <Hero />
       
-      <AboutUs />
+      <Events />
       
       <Separator className="bg-white/5" />
       
-      <Projects />
+      <Games />
+      
+      <Separator className="bg-white/5" />
       
       <Members />
       

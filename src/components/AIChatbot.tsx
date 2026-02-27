@@ -17,7 +17,7 @@ export function AIChatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([
-    { role: "bot", content: "Greetings! I am the Zero G Hub assistant. How can I help you navigate our organization today?" }
+    { role: "bot", content: "Greetings! I am the Zero G Hub assistant. How can I help you navigate our events and game sectors today?" }
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -39,8 +39,8 @@ export function AIChatbot() {
     try {
       const response = await informationalAssistantChatbot({
         question: userMessage,
-        aboutUsContent: "Team Zero Gravity (Zero G) is an elite gaming organization founded in 2021 that focuses on innovation, community, and competitive excellence. Their mission is to redefine boundaries and connect gamers globally through high-level esports and community projects.",
-        projectsContent: "Key projects include: Nova Tournament Hub (automated management platform), Zero G Arena VR (VR training environment for FPS), and Orbit Connect (social app for gamers).",
+        aboutUsContent: "Team Zero Gravity (Zero G) is an elite gaming organization. We focus on high-stakes competitive gaming and community-driven events. Our mission is to dominate digital frontiers and connect the global gaming community.",
+        projectsContent: "Current Events include: Zero G Invitational 2024 (Oct 15) and Global Community Meetup (Nov 02). Active Game Sectors: Tactical Strike (FPS), Starfall Chronicles (Space Sim), and Neon Velocity (Cyberpunk Racer).",
         membersContent: "Ground crew members include: Alex 'Apex' Vance (Founder & Team Lead), Satoshi 'Ghost' K. (Lead Strategist), Elena 'Dev' Rossi (Tech Architect), and Marco 'Comm' Lopez (Community Manager)."
       });
 
@@ -105,7 +105,7 @@ export function AIChatbot() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                placeholder="Ask about Zero G..."
+                placeholder="Ask about events or games..."
                 className="bg-secondary border-border rounded-xl pr-12 focus-visible:ring-primary"
               />
               <button

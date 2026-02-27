@@ -21,8 +21,8 @@ export function Navigation() {
 
   const navLinks = [
     { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Projects", href: "#projects" },
+    { name: "Events", href: "#events" },
+    { name: "Games", href: "#games" },
     { name: "Members", href: "#members" },
     { name: "Contact", href: "#contact" },
   ];
