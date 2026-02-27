@@ -45,8 +45,10 @@ export function Hero() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" className="bg-primary text-background hover:bg-accent px-8 py-6 rounded-full text-base font-bold transition-all hover:scale-105 group">
-            Explore Sectors <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+          <Button asChild size="lg" className="bg-primary text-background hover:bg-accent px-8 py-6 rounded-full text-base font-bold transition-all hover:scale-105 group">
+            <a href="#members">
+              Meet Our Team <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </a>
           </Button>
           <Button size="lg" variant="outline" className="border-border hover:bg-white/5 px-8 py-6 rounded-full text-base font-bold transition-all">
             Join the Ranks
