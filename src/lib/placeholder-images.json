@@ -7,6 +7,12 @@
       "imageHint": "space green"
     },
     {
+      "id": "logo",
+      "description": "Zero Gravity Abstract Logo",
+      "imageUrl": "https://images.unsplash.com/photo-1614850523296-e8c041de4398?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+      "imageHint": "green logo"
+    },
+    {
       "id": "event-1",
       "description": "Grand Championship Final",
       "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlc3BvcnRzJTIwdG91cm5hbWVudHxlbnwwfHx8fDE3NzIxODQwNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",

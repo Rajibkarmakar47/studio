@@ -1,11 +1,14 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Rocket } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,6 +30,8 @@ export function Navigation() {
     { name: "Members", href: "/members" },
   ];
 
+  const logoImage = PlaceHolderImages.find((img) => img.id === "logo");
+
   return (
     <nav
       className={cn(
@@ -36,8 +41,17 @@ export function Navigation() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center group-hover:bg-accent transition-colors">
-            <Rocket className="text-background w-6 h-6" />
+          <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center transition-transform group-hover:scale-110 border border-primary/20">
+            {logoImage && (
+              <Image
+                src={logoImage.imageUrl}
+                alt="Zero Gravity Logo"
+                width={40}
+                height={40}
+                className="object-cover"
+                data-ai-hint={logoImage.imageHint}
+              />
+            )}
           </div>
           <span className="font-headline font-bold text-xl tracking-tighter uppercase text-primary">
             ZERO GRAVITY
