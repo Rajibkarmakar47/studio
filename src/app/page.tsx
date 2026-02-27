@@ -62,21 +62,6 @@ export default function Home() {
       <Navigation />
       
       <Hero />
-
-      {/* Team Introduction Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-4 py-1.5 mb-8 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-[0.3em] uppercase">
-              Mission Directive
-            </div>
-            <p className="text-2xl md:text-4xl font-headline font-bold leading-tight theme-text-gradient mb-8">
-              &quot;Founded with a vision to dominate the competitive gaming scene, Zero Gravity is a growing force in the esports world. We combine skill, teamwork, and high-level strategy to achieve excellence across multiple gaming titles. Our mission is simple – to create a culture of discipline, unity, and victory, shaping future esports champions.&quot;
-            </p>
-            <div className="w-24 h-1 bg-primary/30 mx-auto rounded-full" />
-          </div>
-        </div>
-      </section>
       
       <Separator className="bg-white/5" />
       
