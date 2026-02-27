@@ -1,29 +1,41 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 120 10% 4%;
-    --foreground: 120 5% 95%;
-    --card: 120 10% 6%;
-    --card-foreground: 120 5% 95%;
-    --popover: 120 10% 6%;
-    --popover-foreground: 120 5% 95%;
-    --primary: 130 95% 58%;
-    --primary-foreground: 120 10% 4%;
-    --secondary: 120 10% 12%;
-    --secondary-foreground: 130 95% 58%;
-    --muted: 120 10% 15%;
-    --muted-foreground: 120 5% 70%;
-    --accent: 89 98% 70%;
-    --accent-foreground: 120 10% 4%;
+    /* Dark Emerald Background */
+    --background: 165 60% 3%;
+    --foreground: 165 10% 98%;
+    
+    /* Emerald Card/Popovers */
+    --card: 165 50% 5%;
+    --card-foreground: 165 10% 98%;
+    --popover: 165 50% 5%;
+    --popover-foreground: 165 10% 98%;
+    
+    /* Gold Primary */
+    --primary: 45 90% 50%;
+    --primary-foreground: 165 60% 3%;
+    
+    /* Emerald Secondary */
+    --secondary: 165 40% 10%;
+    --secondary-foreground: 45 90% 50%;
+    
+    /* Muted Tones */
+    --muted: 165 30% 15%;
+    --muted-foreground: 165 10% 70%;
+    
+    /* Gold/Emerald Accent */
+    --accent: 42 100% 70%;
+    --accent-foreground: 165 60% 3%;
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 120 10% 20%;
-    --input: 120 10% 20%;
-    --ring: 130 95% 58%;
+    
+    --border: 165 30% 15%;
+    --input: 165 30% 15%;
+    --ring: 45 90% 50%;
     --radius: 0.75rem;
   }
 }
@@ -45,11 +57,11 @@
   @apply bg-background/80 backdrop-blur-lg border-b border-white/5;
 }
 
-.green-glow {
-  box-shadow: 0 0 20px rgba(46, 250, 79, 0.2);
+.gold-glow {
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.2);
 }
 
-.green-text-gradient {
+.theme-text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary;
 }
 

@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -12,16 +11,16 @@ export function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background with Green Glow */}
+      {/* Background with Theme Glow */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background z-10" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[120px] rounded-full z-0" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full z-0" />
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
             alt={heroImage.description}
             fill
-            className="object-cover opacity-30 grayscale brightness-50"
+            className="object-cover opacity-20 grayscale brightness-50"
             priority
             data-ai-hint={heroImage.imageHint}
           />
@@ -34,11 +33,11 @@ export function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          Redefining Boundaries
+          Defying the Status Quo
         </div>
         
         <h1 className="text-5xl md:text-8xl font-headline font-bold mb-6 tracking-tighter leading-tight max-w-4xl mx-auto">
-          TEAM <span className="green-text-gradient">ZERO GRAVITY</span>
+          TEAM <span className="theme-text-gradient">ZERO GRAVITY</span>
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto font-body">
@@ -47,10 +46,10 @@ export function Hero() {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button size="lg" className="bg-primary text-background hover:bg-accent px-8 py-6 rounded-full text-base font-bold transition-all hover:scale-105 group">
-            Explore Projects <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+            Explore Sectors <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Button>
           <Button size="lg" variant="outline" className="border-border hover:bg-white/5 px-8 py-6 rounded-full text-base font-bold transition-all">
-            Meet the Squad
+            Join the Ranks
           </Button>
         </div>
       </div>
