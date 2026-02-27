@@ -7,15 +7,20 @@ import { Events } from "@/components/Events";
 import { Games } from "@/components/Games";
 import { Members } from "@/components/Members";
 import { ContactForm } from "@/components/ContactForm";
-import { AIChatbot } from "@/components/AIChatbot";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
   const [year, setYear] = useState<number | null>(null);
 
   useEffect(() => {
+    setMounted(true);
     setYear(new Date().getFullYear());
   }, []);
+
+  if (!mounted) {
+    return <div className="min-h-screen bg-background" />;
+  }
 
   return (
     <main className="min-h-screen">
@@ -55,8 +60,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
-      <AIChatbot />
     </main>
   );
 }

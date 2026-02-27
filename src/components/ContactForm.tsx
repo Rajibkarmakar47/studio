@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -16,7 +15,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/hooks/use-toast";
 import { Send, Mail, MapPin, Phone } from "lucide-react";
 
 const formSchema = z.object({
@@ -38,12 +36,9 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: "Transmission Received",
-      description: "We've received your inquiry and will respond shortly.",
-    });
+    console.log("Form Submitted:", values);
     form.reset();
+    alert("Transmission Received. We've received your inquiry and will respond shortly.");
   }
 
   return (
@@ -87,7 +82,7 @@ export function ContactForm() {
                       <FormItem>
                         <FormLabel>Callsign</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your Name" className="bg-background border-border py-6" {...field} />
+                          <Input placeholder="Your Name" className="bg-background border-border py-6" {...field} suppressHydrationWarning />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -100,7 +95,7 @@ export function ContactForm() {
                       <FormItem>
                         <FormLabel>Comms Channel</FormLabel>
                         <FormControl>
-                          <Input placeholder="email@domain.com" className="bg-background border-border py-6" {...field} />
+                          <Input placeholder="email@domain.com" className="bg-background border-border py-6" {...field} suppressHydrationWarning />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -114,7 +109,7 @@ export function ContactForm() {
                     <FormItem>
                       <FormLabel>Transmission Topic</FormLabel>
                       <FormControl>
-                        <Input placeholder="What's this about?" className="bg-background border-border py-6" {...field} />
+                        <Input placeholder="What's this about?" className="bg-background border-border py-6" {...field} suppressHydrationWarning />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -131,6 +126,7 @@ export function ContactForm() {
                           placeholder="Your detailed inquiry..." 
                           className="bg-background border-border min-h-[150px] resize-none" 
                           {...field} 
+                          suppressHydrationWarning
                         />
                       </FormControl>
                       <FormMessage />
