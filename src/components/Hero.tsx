@@ -52,9 +52,6 @@ export function Hero() {
               Meet Our Team <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
-          <Button size="lg" variant="outline" className="border-border hover:bg-white/5 px-8 py-6 rounded-full text-base font-bold transition-all">
-            Join the Ranks
-          </Button>
         </div>
       </div>
 
