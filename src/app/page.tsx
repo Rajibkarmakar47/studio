@@ -1,10 +1,9 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-import { Events } from "@/components/Events";
-import { Games } from "@/components/Games";
 import { Members } from "@/components/Members";
 import { ContactForm } from "@/components/ContactForm";
 import { Separator } from "@/components/ui/separator";
@@ -28,15 +27,11 @@ export default function Home() {
       
       <Hero />
       
-      <Games />
-      
-      <Separator className="bg-white/5" />
-      
-      <Events />
-      
       <Separator className="bg-white/5" />
       
       <Members />
+      
+      <Separator className="bg-white/5" />
       
       <ContactForm />
       

@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -5,10 +6,12 @@ import Link from "next/link";
 import { Menu, X, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +22,11 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Games", href: "#games" },
-    { name: "Events", href: "#events" },
-    { name: "Members", href: "#members" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "Games", href: "/games" },
+    { name: "Events", href: "/events" },
+    { name: "Members", href: "/#members" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -49,7 +52,10 @@ export function Navigation() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              className={cn(
+                "text-sm font-medium transition-colors",
+                pathname === link.href ? "text-primary" : "text-foreground/80 hover:text-primary"
+              )}
             >
               {link.name}
             </Link>
