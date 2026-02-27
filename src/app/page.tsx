@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { Events } from "@/components/Events";
@@ -9,6 +11,12 @@ import { AIChatbot } from "@/components/AIChatbot";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
+  const [year, setYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <main className="min-h-screen">
       <Navigation />
@@ -43,7 +51,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-[10px] uppercase tracking-[0.3em] text-white/20">
-            &copy; {new Date().getFullYear()} Team Zero Gravity. All systems nominal.
+            &copy; {year ?? '...'} Team Zero Gravity. All systems nominal.
           </div>
         </div>
       </footer>
